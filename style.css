@@ -98,8 +98,9 @@ main h1 {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     margin-top: 3%;
+    margin-bottom: 0%;
 }
 
 .home-types-of-climbing ul{
@@ -182,7 +183,14 @@ main h1 {
     margin: 3em;
 }
 
-footer {
-    margin-top: 50%;
+.climbing-bouldering {
+    background-color: #f7f1e1;
 }
 
+.climbing-rope {
+    background-color: #f7f1e1;
+}
+
+.climbing-speed {
+    background-color: #f7f1e1;
+}
