@@ -13,7 +13,6 @@ h3 {
     font-size: 1.5vw;
 }
 
-
 /* navigatie */
 nav {
     margin: 0;
@@ -166,6 +165,32 @@ body {
     font-weight: bold;
     color: black;
     font-size: 1.5em;
+}
+
+@keyframes hovertext {
+    0% {
+        color: #020f06;
+    }
+
+    50% {
+        color: #466049;
+    }
+
+    100% {
+        color: azure;
+    }
+}
+
+.home-competitions a:hover, .home-me a:hover {
+    animation-name: hovertext;
+    animation-duration: 1s;
+    animation-timing-function: 
+    ease-in-out;
+        animation-delay: .5s;
+        animation-iteration-count: 
+    infinite;
+        animation-direction: 
+    alternate;
 }
 
 .home-competitions p, .home-me p {
@@ -371,6 +396,33 @@ body {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    padding: 0.5vw;
+}
+
+@keyframes hover {
+    0% {
+        background-color: #020f06;
+    }
+
+    50% {
+        background-color: #466049;
+    }
+
+    100% {
+        background-color: azure;
+    }
+}
+
+.contact-aboutme li a:hover {
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-timing-function: 
+    ease-in-out;
+        animation-delay: .5s;
+        animation-iteration-count: 
+    infinite;
+        animation-direction: 
+    alternate;
 }
 
 .contact-me {
