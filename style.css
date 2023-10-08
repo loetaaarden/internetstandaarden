@@ -24,8 +24,8 @@ nav li a {
     display: inline-block;
     color: azure;
     text-align: center;
-    padding: 2vmin 2.1vmin;
-    font-size: 2.3vmin;
+    padding: 0.9vw;
+    font-size: 1vw;
 }
 
 nav li:first-of-type {
@@ -36,10 +36,10 @@ nav img{
     float: left;
     padding: 5px;
     margin-left: 2.5%;
-    margin-bottom: 0%;
+    max-width: 2.7vw;
 }
   
-a:hover {
+nav a:hover {
     background-color: #020f06;
 }
 
@@ -47,41 +47,38 @@ body {
     background-color: #466049;
 }
 
-main img {
+.hero img {
     margin: 0 auto;
     width: 100vw;
 }
 
-main {
+.hero {
+    margin-bottom: 0%;
+    background-color: #a7ccaa;
     position: relative;
 }
 
-.hero {
-    margin-bottom: 0%;
-    background-color: rgb(167, 204, 170);
-}
-
-main h1 {
+.hero h1 {
     font-size: 3.5vmin;
     color:azure;
     position: absolute;
-    top: 20%;
+    top: 25vw;
     left: 48%;
 }
 
-.arrow {
+.hero i {
     border: solid azure;
     border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 4px;
     transform: rotate(45deg);
     position: absolute;
-    top: 30%;
+    top: 40vw;
     left: 50%;
 }
 
 .home-text-box {
-    background-color: rgb(167, 204, 170);
+    background-color: #a7ccaa;
     padding: 1.5% 0% 6% 0%;
     display: flex;
     justify-content: center;    
@@ -95,15 +92,15 @@ main h1 {
 }
 
 .home-text-box::before {
-    background: linear-gradient(-45deg, azure 55px, transparent 0), linear-gradient(45deg, #0d230d 55px, transparent 0);
+    background: linear-gradient(-45deg, azure 3vw, transparent 0), linear-gradient(45deg, #0d230d 3vw, transparent 0);
     background-repeat: repeat-x;
-    background-size: 80px 80px;
+    background-size: 8vw 8vw;
     content: " ";
     display: block;
     position: absolute;
     width: 100%;
     height: 50%;
-    margin-top: 3%;
+    margin-top: 0.5vw;
     margin-bottom: 0%;
 }
 
@@ -122,7 +119,7 @@ main h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-flex;
     padding: 2vmin 2.1vmin;
-    font-size: 2vmin;
+    font-size: 1.5vw;
     background-color: #0d230d;
     color: azure;
     border-radius: 2.5%;
@@ -150,20 +147,36 @@ main h1 {
     transform: scale(1.1) rotate(10deg);
 }
 
-.home-competions {
+.home-competitions {
     background-color: #0d230d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 2vmin;
     font-size: 2vmin;
     text-align: left;
     padding: 3.2vw;
-    margin-top: 80px;
     color: azure;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
 }
 
-.home-competions p {
-    padding-top: 1vw;
+.home-competitions a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    font-size: 2em;
 }
+
+.home-competitions p {
+    padding-top: 1vw;
+    font-size: 1.2vw;
+}
+
+.home-competitions img{
+    max-width: 15vw;
+    margin: 2vw;
+}
+
 
 .home-me {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -172,27 +185,53 @@ main h1 {
 }
 
 .home-me img{
-    background-color: #0d230d;
-    padding: 1.5vmin;
-    margin: 5%;
+    background-color: #a7ccaa;
+    padding: 1vw;
+    margin: 4vw;
     float: left;
+    max-width: 18vw;
+    max-height: 25vw;
 }
 
-.home-me h3, .home-me p {
-    padding: 1.5vmin;
+.home-me div{
+    padding: 2vw;
     text-align: left;
-    background-color: rgb(167, 204, 170);
+    background-color: #a7ccaa;
     display: flex;
     flex-direction: column;
     margin: 3em;
+    font-size: 1.2vw;
+}
+
+.home-me p {
+    padding-top: 1vw;
+}
+
+.climbing-text {
+    display: flex;
+    justify-content: center;
+    padding: 1.8%;
+    font-size: 1.5vw;
+    color: azure;
 }
 
 .climbing-bouldering {
-    background-color: rgb(167, 204, 170);
+    background-color: #a7ccaa;
     padding: 2%;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.climbing-bouldering img {
+    max-width: 15vw;
+}
+
+.climbing-bouldering :nth-child(2) {
+    margin: 2vw;
 }
 
 .climbing-lead {
@@ -200,18 +239,264 @@ main h1 {
     color: azure;
     padding: 2%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-bottom-left-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+
+.climbing-lead img {
+    max-width: 15vw;
+}
+
+.climbing-lead :nth-child(2) {
+    margin: 2vw;
 }
 
 .climbing-speed {
-    background-color: rgb(167, 204, 170);
+    background-color: #a7ccaa;
     padding: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.climbing-speed img {
+    max-width: 15vw;
+}
+
+.climbing-speed :nth-child(2) {
+    margin: 2vw;
+}
+
+.competitions h2 {
+    color: azure;
+    margin: 1.5%;
+    text-align: center;
+}
+
+.competitions h3 {
+    background-color: #0d230d;
+    padding: 0.2vw;
+    text-align: center;
+    color: azure;
+}
+
+.competitions-worldcup h4 {
+    background-color: #a7ccaa;
+    padding: 0.2vw;
+    text-align: center;
+}
+
+.competitions p {
+    padding: 1.5vw;
+}
+
+.competitions-worldcup img {
+    max-height: 25vw;
+}
+
+.competitions div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.competitions-olympics img {
+    max-height: 15vw;
+}
+
+.iclimb-me-1 {
+    padding: 2%;
+    background-color: #a7ccaa;
+    display: flex;
+}
+
+.iclimb-me-1 img {
+    max-width: 20vw;
+    padding: 1%;
+    background-color: #020f06;
+    border-radius: 2%;
+}
+
+.iclimb-me-1 div, .iclimb-me-2 div, .iclimb-me-3 div, .iclimb-me-4 div {
+    margin: 1vw;
+    margin-left: 2vw;
+}
+
+.iclimb-me-2 {
+    padding: 2%;
+    background-color: #466049;
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+}
+
+.iclimb-me-2 img {
+    max-width: 20vw;
+    padding: 1%;
+    background-color: #020f06;
+    border-radius: 2%;
+    margin: 0%;
+}
+
+.iclimb-me-3 {
+    padding: 2%;
+    background-color: #a7ccaa;
+    display: flex;
+}
+
+.iclimb-me-3 img {
+    max-width: 20vw;
+    padding: 1%;
+    background-color: #020f06;
+    border-radius: 2%;
+}
+
+.iclimb-me-4 {
+    padding: 2%;
+    background-color: #466049;
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+}
+
+.iclimb-me-4 img {
+    max-height: 20vw;
+    padding: 1%;
+    background-color: #020f06;
+    border-radius: 2%;
+}
+
+.iclimb-me-4 a {
+    color: black;
+}
+
+.contact-aboutme {
+    margin: 2vw;
+    background-color: #a7ccaa;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contact-aboutme img {
+    max-width: 20vw;
+    padding: 0.8vw;
+    background-color: #020f06;
+}
+
+.contact-about-text h2, .contact-about-text p{
+    margin: 1.5vw;
+}
+
+.contact-about-text p, .contact-about-text a {
+    margin-top: 1.5vw;
+}
+
+.contact-about-text img {
+    background-color: #a7ccaa;
+    max-width: 5vw;
+}
+
+.contact-about-text ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.7vw;
+}
+  
+.contact-about-text li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-me {
+    margin: 2vw;
+}
+
+.contact-me h2 {
+    margin-bottom: 1vw;
+}
+
+.line {
+    background-color: #020f06;
+    padding: 1vw;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="message"] {
+    width: 90%;
+    padding: 1vw;
+    margin: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    border: 1px solid #0d230d;
+    border-radius: 4px;
+}
+
+input[type="message"] {
+    height: 10vw;
+}
+
+input[type="submit"] {
+    background-color: #a7ccaa;
+    color: black;
+    border: none;
+    padding: 1% 2%;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #79947d;
+}
+
+.source-reference {
+    margin: 4vw;
+}
+
+.source-reference a {
+    color: azure;
 }
 
 footer{
     background-color: #0d230d;
+    display: flex;
+    padding: 0.5vw;
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    align-items: center;
+}
+
+footer img {
+    max-width: 3.5vw;
+}
+
+footer div img {
+    background-color: #0d230d;
+    max-width: 2.5vw;
+    margin-right: 0.5vw;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div h3 {
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
 }
